@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "jarvis AI YouTube Summarizer",
+  "version": "1.00",
+  "description": "Summarizer for YouTube videos",
+  "icons": {
+    "48": "icons/icon_48.png",
+    "64": "icons/icon_64.png",
+    "128": "icons/icon_128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "html/facebook_login.html",
+        "*.js",
+        "*.png",
+        "*.gif",
+        "*.jpg",
+        "*.jpeg"
+      ],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ],
+  "action": {
+    "default_title": "jarvis AI YouTube Summarizer",
+    "default_popup": "html/index.html"
+  },
+  "permissions": [
+    "storage",
+    "cookies",
+    "notifications",
+    "identity",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": ["http://*/*", "*://*/*"],
+  "options_ui": {
+    "page": "html/options.html",
+    "open_in_tab": true
+  },
+  "oauth2": {
+    "client_id": "970872214371-2n78sauabp5o7h007ki70r6us81ujd5o.apps.googleusercontent.com",
+    "scopes": ["openid", "email", "profile"]
+  },
+  "content_scripts": [
+    {
+      "js": ["./content.js"],
+      "matches": [
+        "https://youtube.com/*",
+        "https://www.youtube.com/*",
+        "https://youtu.be/*",
+        "https://www.youtu.be/*",
+        "https://www.youtube-nocookie.com/*",
+        "https://youtube-nocookie.com/*",
+        "https://www.youtube.com/embed/*",
+        "https://youtube.com/embed/*"
+      ]
+    }
+  ]
+}

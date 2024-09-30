@@ -1,0 +1,16 @@
+.round-loader {
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid var(--background);
+    border-top-color: #ff4900;
+    animation: round-loader-spin 1s ease-in-out infinite;
+}
+
+@keyframes round-loader-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

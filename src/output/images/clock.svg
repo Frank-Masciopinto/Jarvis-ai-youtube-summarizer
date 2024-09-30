@@ -1,0 +1,28 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgClock(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 25,
+    viewBox: "0 0 24 25",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M5.87109 13.8047C5.63672 13.8047 5.44141 13.7266 5.28516 13.5703C5.12891 13.4141 5.05078 13.2188 5.05078 12.9844C5.05078 12.7578 5.12891 12.5664 5.28516 12.4102C5.44141 12.2539 5.63672 12.1758 5.87109 12.1758H11.1797V5.08594C11.1797 4.85938 11.2578 4.66797 11.4141 4.51172C11.5703 4.35547 11.7617 4.27734 11.9883 4.27734C12.2227 4.27734 12.418 4.35547 12.5742 4.51172C12.7305 4.66797 12.8086 4.85938 12.8086 5.08594V12.9844C12.8086 13.2188 12.7305 13.4141 12.5742 13.5703C12.418 13.7266 12.2227 13.8047 11.9883 13.8047H5.87109ZM12 24.4922C10.3672 24.4922 8.82812 24.1797 7.38281 23.5547C5.94531 22.9297 4.67578 22.0664 3.57422 20.9648C2.47266 19.8633 1.60938 18.5938 0.984375 17.1562C0.359375 15.7109 0.046875 14.1719 0.046875 12.5391C0.046875 10.9062 0.359375 9.37109 0.984375 7.93359C1.60938 6.48828 2.46875 5.21484 3.5625 4.11328C4.66406 3.01172 5.93359 2.14844 7.37109 1.52344C8.81641 0.898438 10.3555 0.585938 11.9883 0.585938C13.6211 0.585938 15.1602 0.898438 16.6055 1.52344C18.0508 2.14844 19.3242 3.01172 20.4258 4.11328C21.5273 5.21484 22.3906 6.48828 23.0156 7.93359C23.6406 9.37109 23.9531 10.9062 23.9531 12.5391C23.9531 14.1719 23.6406 15.7109 23.0156 17.1562C22.3906 18.5938 21.5273 19.8633 20.4258 20.9648C19.3242 22.0664 18.0508 22.9297 16.6055 23.5547C15.168 24.1797 13.6328 24.4922 12 24.4922ZM12 22.5C13.3828 22.5 14.6758 22.2422 15.8789 21.7266C17.082 21.2109 18.1406 20.5 19.0547 19.5938C19.9688 18.6797 20.6797 17.6211 21.1875 16.418C21.7031 15.2148 21.9609 13.9219 21.9609 12.5391C21.9609 11.1562 21.7031 9.86328 21.1875 8.66016C20.6719 7.45703 19.957 6.39844 19.043 5.48438C18.1367 4.57031 17.0781 3.85937 15.8672 3.35156C14.6641 2.83594 13.3711 2.57812 11.9883 2.57812C10.6055 2.57812 9.3125 2.83594 8.10938 3.35156C6.90625 3.85937 5.85156 4.57031 4.94531 5.48438C4.03906 6.39844 3.32812 7.45703 2.8125 8.66016C2.30469 9.86328 2.05078 11.1562 2.05078 12.5391C2.05078 13.9219 2.30469 15.2148 2.8125 16.418C3.32812 17.6211 4.03906 18.6797 4.94531 19.5938C5.85938 20.5 6.91797 21.2109 8.12109 21.7266C9.32422 22.2422 10.6172 22.5 12 22.5Z",
+    fill: "#FF6D24"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgClock);
+export default __webpack_public_path__ + "static/media/clock.f5cf1f25deabca230949c7aa35f1ed60.svg";
+export { ForwardRef as ReactComponent };

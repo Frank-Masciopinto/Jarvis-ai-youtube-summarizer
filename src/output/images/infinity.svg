@@ -1,0 +1,28 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgInfinity(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 32,
+    height: 15,
+    viewBox: "0 0 32 15",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M0.71875 7.53906C0.71875 6.125 0.992188 4.89453 1.53906 3.84766C2.09375 2.80078 2.86328 1.99219 3.84766 1.42188C4.83984 0.84375 5.98438 0.554688 7.28125 0.554688C8.34375 0.554688 9.33594 0.785156 10.2578 1.24609C11.1797 1.69922 12.125 2.39062 13.0938 3.32031L16 6.10938L18.8945 3.32031C19.8633 2.39062 20.8086 1.69922 21.7305 1.24609C22.6602 0.785156 23.6523 0.554688 24.707 0.554688C26.0039 0.554688 27.1445 0.84375 28.1289 1.42188C29.1211 1.99219 29.8906 2.80078 30.4375 3.84766C30.9922 4.89453 31.2695 6.125 31.2695 7.53906C31.2695 8.95312 30.9922 10.1836 30.4375 11.2305C29.8906 12.2773 29.1211 13.0898 28.1289 13.668C27.1445 14.2383 26.0039 14.5234 24.707 14.5234C23.6523 14.5234 22.6602 14.2969 21.7305 13.8438C20.8086 13.3828 19.8633 12.6875 18.8945 11.7578L16 8.96875L13.0938 11.7578C12.125 12.6875 11.1797 13.3828 10.2578 13.8438C9.33594 14.2969 8.34375 14.5234 7.28125 14.5234C5.98438 14.5234 4.83984 14.2383 3.84766 13.668C2.86328 13.0898 2.09375 12.2773 1.53906 11.2305C0.992188 10.1836 0.71875 8.95312 0.71875 7.53906ZM2.83984 7.53906C2.83984 8.52344 3.02734 9.38281 3.40234 10.1172C3.77734 10.8438 4.29688 11.4062 4.96094 11.8047C5.63281 12.2031 6.40625 12.4023 7.28125 12.4023C8.03125 12.4023 8.75 12.2227 9.4375 11.8633C10.125 11.4961 10.8438 10.9609 11.5938 10.2578L14.5117 7.53906L11.6055 4.82031C10.8477 4.11719 10.125 3.58594 9.4375 3.22656C8.75 2.85938 8.03125 2.67578 7.28125 2.67578C6.40625 2.67578 5.63281 2.875 4.96094 3.27344C4.29688 3.67188 3.77734 4.23438 3.40234 4.96094C3.02734 5.6875 2.83984 6.54688 2.83984 7.53906ZM17.4766 7.53906L20.3945 10.2578C21.1445 10.9609 21.8633 11.4961 22.5508 11.8633C23.2383 12.2227 23.957 12.4023 24.707 12.4023C25.582 12.4023 26.3516 12.2031 27.0156 11.8047C27.6875 11.4062 28.2109 10.8438 28.5859 10.1172C28.9609 9.38281 29.1484 8.52344 29.1484 7.53906C29.1484 6.54688 28.9609 5.6875 28.5859 4.96094C28.2109 4.23438 27.6875 3.67188 27.0156 3.27344C26.3516 2.875 25.582 2.67578 24.707 2.67578C23.957 2.67578 23.2383 2.85938 22.5508 3.22656C21.8633 3.58594 21.1406 4.11719 20.3828 4.82031L17.4766 7.53906Z",
+    fill: "#FF6D24"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgInfinity);
+export default __webpack_public_path__ + "static/media/infinity.2f87fdd6de7db496308a8f4072ee11e5.svg";
+export { ForwardRef as ReactComponent };

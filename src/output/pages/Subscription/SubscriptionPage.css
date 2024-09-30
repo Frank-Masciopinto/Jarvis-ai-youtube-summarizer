@@ -1,0 +1,129 @@
+.subscription-page {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 calc(0rem + (1vw - 0px) * 4.2666666667);
+}
+
+.subscription-page__header {
+    padding: 16px 0;
+    margin-bottom: 36px;
+}
+
+.subscription-page__title {
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 70.4px */
+    max-width: 700px;
+    font-size: 32px;
+    letter-spacing: -0.64px;
+    margin: 0;
+}
+
+.subscription-page__description {
+    color: rgba(0, 0, 0, 0.32);
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.36px;
+}
+
+.subscription-page__perks-list {
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.subscription-page__perk {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.subscription-page__perk-icon {
+    width: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription-page__perk-text {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+}
+
+.subscription-page__actions {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+    display: flex;
+}
+
+.subscription-page__primary-button {
+    padding: 14px 28px;
+    gap: 4px;
+    border-radius: 12px;
+    background: #FF6D24;
+
+    overflow: hidden;
+    color: #FFF;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+}
+
+.subscription-page__secondary-button {
+    display: flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 12px;
+    background: rgba(255, 100, 26, 0.12);
+
+    overflow: hidden;
+    color: #FF6D24;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+}
+
+.subscription-page__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 32px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription-page__footer-link {
+    color: rgba(0, 0, 0, 0.32);
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+}
+
+.subscription-page__primary-button:hover,
+.subscription-page__secondary-button:hover,
+.subscription-page__footer-link:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
